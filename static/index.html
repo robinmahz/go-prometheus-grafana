@@ -1,1 +1,35 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Zone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-grid">
+    <h1>🎮 Game Zone</h1>
+
+    <!-- Game Menu -->
+    <div class="games">
+      <div class="game-card" onclick="startGame('ticTacToe')">Tic Tac Toe</div>
+      <div class="game-card" onclick="startGame('pongGame')">Pong Game</div>
+      <div class="game-card" onclick="startGame('snakeGame')">Snake Game</div>
+      <div class="game-card" onclick="startGame('carGame')">Car Racing</div>
+      <div class="game-card" onclick="startGame('breakout')">Breakout Game</div>
+    </div>
+
+    <!-- Dynamic Game Area -->
+    <div id="gameContainer"></div>
+  </div>
+
+  <!-- Load Game Scripts (Order Matters!) -->
+  <script src="js/tictactoe.js"></script>
+  <script src="js/pong.js"></script>
+  <script src="js/snake.js"></script>
+  <script src="js/car.js"></script>
+  <script src="js/breakout.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>
